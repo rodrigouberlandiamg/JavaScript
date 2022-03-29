@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos DOM</title>
+    <style>
+        body {
+            background: rgb(75, 75, 226);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos do DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">Clique em mim.</div>
+    <div id="msgid">Clique em mim novamente.</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var p3 = window.document.querySelector('div.msg') // Por Class
+        var p4 = window.document.querySelector('div#msgid') // Por Id
+        var p5 = window.document.getElementById('msgid')
+        var p6 = window.document.getElementsByClassName('msg')[0]
+        var p7 = window.document.getElementsByTagName('div')[1]
+        window.document.write('Ola Mundo !')
+        window.document.write(window.document.URL)
+        window.document.write(p1.innerText)
+        window.document.write(p2.innerText)
+        p1.style.color = 'blue'
+        corpo.style.background = 'green'
+        document.write(p1.innerHTML)
+        window.document.write(p3.innerText)
+        window.document.write(p4.innerText)
+        window.document.write(p5.innerText)
+        window.document.write(p6.innerText)
+        window.document.write(p7.innerText)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+//console.log('Tudo Bem ?')
+var i = 0
+while (i = 7){
+    console.log('Ola tudo bem ?')
+    i++
+}
